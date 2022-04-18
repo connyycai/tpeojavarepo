@@ -1,3 +1,7 @@
+// Homework for Week 4
+
+// Pt.1 powersOfThree
+
 function powersOfThree() {
     var limit = 9
     for (var i = 0; i <= limit; i++) {
@@ -11,16 +15,11 @@ function powersOfThree() {
 
 var timeoutId = setTimeout(powersOfThree, 3000);
 
+// Pt.2 everyTenSeconds
+
 function everyTenSeconds() {
-    var count = 0;
-    function countHelloWorld() {
-        count += 1
-    }
-    var intervalId = setInterval(console.log, 10000, "Hello World")
-    var intervalId = setInterval(countHelloWorld, 10000)
-    if (count == 12) {
-        clearTimeout(intervalId)
-    }
+    var intervalId = setInterval(console.log, 10000, "Hello World");
+    setTimeout(clearInterval, 130000, intervalId);
 }
 
 everyTenSeconds()
