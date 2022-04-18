@@ -1,3 +1,7 @@
+// Homework from Week 3
+
+// Pt.1 countUpwardsByThree
+
 function countUpwardsByThree() {
     for (var i = 0; i < 31; i += 3) {
         console.log(i)
@@ -5,6 +9,8 @@ function countUpwardsByThree() {
 }
 
 countUpwardsByThree();
+
+// Pt.2 guessMyFavoriteNumber
 
 function guessMyFavoriteNumber(guess) {
     if (guess != 3) {
@@ -14,10 +20,12 @@ function guessMyFavoriteNumber(guess) {
     }
 }
 
-guessMyFavoriteNumber(3);
-guessMyFavoriteNumber(4);
-guessMyFavoriteNumber(5);
-guessMyFavoriteNumber(23);
+guessMyFavoriteNumber(3); // Correct 
+guessMyFavoriteNumber(4); // Incorrect
+guessMyFavoriteNumber(5); // Incorrect
+guessMyFavoriteNumber(23); // Incorrect
+
+// Pt.3 convertNumberToDay
 
 function convertNumberToDay(number) {
     switch (number) {
@@ -47,11 +55,11 @@ function convertNumberToDay(number) {
     }
 }
 
-convertNumberToDay(0);
-convertNumberToDay(1);
-convertNumberToDay(2);
-convertNumberToDay(3);
-convertNumberToDay(4);
-convertNumberToDay(5);
-convertNumberToDay(6);
-convertNumberToDay(7);
+convertNumberToDay(0); // 0 - Sun
+convertNumberToDay(1); // 1 - Mon
+convertNumberToDay(2); // 2 - Tues
+convertNumberToDay(3); // 3 - Wed
+convertNumberToDay(4); // 4 - Thurs
+convertNumberToDay(5); // 5 - Fri
+convertNumberToDay(6); // 6 - Sat
+convertNumberToDay(7); // Invalid
